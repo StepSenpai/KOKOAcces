@@ -33,7 +33,7 @@ public class VentanaTable extends JFrame {
     private JPanel panelLeft;
     private JPanel panelDialog;
     private JPanel panelPic;
-    static private JLabel labelDialog;
+    private JLabel labelDialog;
     //static private JLabel labelDialog;
     private JLabel labelPic;
     private JTextField textFieldCodePais;
@@ -219,7 +219,7 @@ public class VentanaTable extends JFrame {
     // cambio de situation, necesitara variables locales dentro de la clase anonima, debido al static sera necesario que
     // ciertos elementos de la ventana sean static tambien
 
-    static void showTalk() {
+    void showTalk() {
         //JLabel no entiende el salto de linea \n, es necesario pasarle el String como <html> y hacer el salto de lina con <br>
         //Si el label es pequeño se realizan saltos de linea automaticamente tambien
         //Dependiendo de la situacion actual (error, modificacion, informacion) cambia el mensaje mostrado
